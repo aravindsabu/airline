@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AllairlinesComponent } from './allairlines/allairlines.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AllpassangerComponent } from './allpassanger/allpassanger.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:AllairlinesComponent
+  },
+  {
+    path:"view",component:AllpassangerComponent
   }
 ]
 
@@ -17,7 +21,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    AllairlinesComponent
+    AllairlinesComponent,
+    AllpassangerComponent
   ],
   imports: [
     BrowserModule,
